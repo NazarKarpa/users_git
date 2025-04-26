@@ -20,6 +20,12 @@ class User(BaseModel):
     age: int
 
 
+@app.get("/")
+async def get_all_users():
+
+    return {'messgae': 'hello, world'}
+
+
 @app.get("/users/all")
 async def get_all_users():
     """
